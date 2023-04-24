@@ -41,9 +41,9 @@ public Object[][] Details(){
 @Test(priority=2, dataProvider="Details")
 public void Login(String name, String password) throws InterruptedException
 {
-	Log.typeusername("name");
+	Log.typeusername(name);
 	Thread.sleep(2000);
-	Log.typepassword("password");
+	Log.typepassword(password);
 	//Log.clickbtn();
 	//Thread.sleep(2000);
 }
